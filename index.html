@@ -11,6 +11,15 @@
     <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
+    <div class="maintenance-overlay" id="maintenanceModal" role="dialog" aria-modal="true" aria-labelledby="maintenanceTitle">
+        <div class="maintenance-modal">
+            <button class="maintenance-close" id="maintenanceClose" type="button" aria-label="Закрыть окно">&times;</button>
+            <p class="maintenance-label">Важное сообщение</p>
+            <h2 id="maintenanceTitle">Сайт дорабатывается</h2>
+            <p>Мы улучшаем сайт и добавляем новые возможности. Спасибо за понимание!</p>
+            <button class="maintenance-button" id="maintenanceConfirm" type="button">Понятно</button>
+        </div>
+    </div>
     <div class="container">
         <header>
             <div class="logog">

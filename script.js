@@ -4,9 +4,31 @@ const searchInput = document.getElementById('searchInput');
 const gameCards = document.querySelectorAll('.game-card');
 const gamesGrid = document.querySelector('.games-grid');
 const filterBtns = document.querySelectorAll('.filter-btn');
+const maintenanceModal = document.getElementById('maintenanceModal');
+const maintenanceClose = document.getElementById('maintenanceClose');
+const maintenanceConfirm = document.getElementById('maintenanceConfirm');
 
 let currentGenre = 'all'; // Текущий выбранный жанр
 let currentSearch = '';    // Текущий поисковый запрос
+
+function closeMaintenanceModal() {
+    maintenanceModal.classList.add('is-hidden');
+}
+
+maintenanceClose.addEventListener('click', closeMaintenanceModal);
+maintenanceConfirm.addEventListener('click', closeMaintenanceModal);
+
+maintenanceModal.addEventListener('click', (event) => {
+    if (event.target === maintenanceModal) {
+        closeMaintenanceModal();
+    }
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        closeMaintenanceModal();
+    }
+});
 
 // Основная функция фильтрации и поиска
 function filterAndSearch() {

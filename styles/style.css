@@ -13,6 +13,90 @@ body {
     color: #e8edf2;
 }
 
+.maintenance-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: rgba(5, 7, 11, 0.82);
+    backdrop-filter: blur(5px);
+}
+
+.maintenance-overlay.is-hidden {
+    display: none;
+}
+
+.maintenance-modal {
+    position: relative;
+    width: min(100%, 460px);
+    padding: 36px 32px 30px;
+    text-align: center;
+    background: linear-gradient(145deg, #1d2433, #11151e);
+    border: 1px solid rgba(226, 58, 58, 0.55);
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.65);
+    animation: modalAppear 0.3s ease-out;
+}
+
+.maintenance-label {
+    margin-bottom: 12px;
+    color: #ff6b6b;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.maintenance-modal h2 {
+    margin-bottom: 14px;
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.maintenance-modal > p:not(.maintenance-label) {
+    color: #b9c0cc;
+    line-height: 1.6;
+}
+
+.maintenance-close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    border: 0;
+    background: transparent;
+    color: #a0a8b8;
+    cursor: pointer;
+    font-size: 28px;
+    line-height: 1;
+}
+
+.maintenance-close:hover {
+    color: #ffffff;
+}
+
+.maintenance-button {
+    margin-top: 24px;
+    padding: 10px 28px;
+    border: 0;
+    border-radius: 8px;
+    background: #e23a3a;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.maintenance-button:hover {
+    background: #ff5050;
+}
+
+@keyframes modalAppear {
+    from { opacity: 0; transform: translateY(12px) scale(0.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
 footer {
     background: #0d0f14;
     color: #8a8f99;
