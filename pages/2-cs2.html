@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Strike 2</title>
+    <link rel="stylesheet" href="/styles/style_universal.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="link-exit">
+            <a href="/index.html" class="exit-btn">Назад</a>
+        </div>
+        <div class="logog">
+            <h1>FreeSteamly</h1>
+            <p>
+                Каталог бесплатных игр
+                <a href="https://store.steampowered.com/">Steam</a>
+            </p>
+        </div>
+    </header>
+    <div class="line"></div>
+    <main class="main-content">
+        <div class="game-info">
+            
+            <div class="game-info-row">
+                <img src="/images/cs2.jpg" alt="Counter Strike 2" loading="lazy" class="img-main">
+                <div class="game-text">
+                    <h2 class="main-details">
+                        Дата выхода: 2023<br>
+                        Жанр: Шутер (FPS)<br>
+                        Разработчик: Valve<br>
+                        Издательство: Valve<br>
+                        Платформа: PC<br>
+                        Тип издания: Лицензия (Free-to-Play)<br>
+                        Язык интерфейса: Русский<br>
+                        Язык озвучки: Русский
+                    </h2>
+                    <h2 class="treb-details">
+                        Операционная система: Windows® 10 <br>
+                        Процессор: 4 потока CPU — Intel® Core™ i5 750 или лучше <br>
+                        Оперативная память: 8 ГБ <br>
+                        Видеокарта: 1 ГБ видеопамяти, совместимость с DirectX 11 и Shader Model 5.0 (например, NVIDIA GeForce GTX 960 или лучше) <br>
+                        DirectX: Версия 11 <br>
+                        Свободное место на жестком диске: 85 ГБ <br>
+                        Звуковая карта: Совместимая с DirectX <br>
+                    </h2>
+                </div>
+            </div>
+           
+            <div class="game-desk"> <h2>Описание игры</h2>
+                <p>CS2 — это командный тактический шутер от первого лица, где команды «спецназа» и «террористов» сражаются в раундах на специализированных картах. Цель каждой стороны — выполнить уникальное задание: террористы должны заложить бомбу или удерживать заложников, а спецназ — предотвратить взрыв или освободить заложников. Игроки зарабатывают деньги за убийства и победы в раундах, покупают разное оружие и броню, используют дымовые гранаты и «коктейли Молотова» для тактического контроля карты. CS2 славится строгой соревновательной системой, переработанной физикой дыма и отсутствием геймплейного доната (все играют на равных).</p>
+            </div>
+            <h2 class="trailer">Трейлер игры:</h2>
+            <div class="video-trailer">
+                <iframe width="700" height="400" src="https://www.youtube.com/embed/c80dVYcL69E?si=4MjknT4pSRpdaOoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="screenshots">
+                <h3 class="screenshots-title">Скриншоты игры:</h3>
+                <div class="screenshots-grid">
+                    <img src="/images/cs-screenshots/1.jpeg" alt="Скриншот игры" loading="lazy" class="img-screen" onclick="openFullscreen(this)">
+                    <img src="/images/cs-screenshots/2.jpeg" alt="Скриншот игры" loading="lazy" class="img-screen" onclick="openFullscreen(this)">
+                    <img src="/images/cs-screenshots/3.jpeg" alt="Скриншот игры" loading="lazy" class="img-screen" onclick="openFullscreen(this)">
+                    <img src="/images/cs-screenshots/4.jpg" alt="Скриншот игры" loading="lazy" class="img-screen" onclick="openFullscreen(this)">
+                    <img src="/images/cs-screenshots/5.jpg" alt="Скриншот игры" loading="lazy" class="img-screen" onclick="openFullscreen(this)">
+                    <img src="/images/cs-screenshots/6.jpg" alt="Скриншот игры" loading="lazy" class="img-screen" onclick="openFullscreen(this)">
+                    <img src="/images/cs-screenshots/7.jpg" alt="Скриншот игры" loading="lazy" class="img-screen" onclick="openFullscreen(this)">
+                    <img src="/images/cs-screenshots/8.jpg" alt="Скриншот игры" loading="lazy" class="img-screen" onclick="openFullscreen(this)">
+                </div>
+            </div>
+            <h3 class="official">Официальная ссылка на игру в steam:</h3>
+            <div class="link-game">
+                <a href="https://store.steampowered.com/app/730/Counter_Strike_2/" class="btn">Скачать игру</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Данный сайт никак не связан с Valve Corporation. Все игры распространяются на условиях их разработчиков.</p>
+    </footer>
+
+    <script>
+        function openFullscreen(img) {
+            // Создаём затемнённый фон
+            const overlay = document.createElement('div');
+            overlay.className = 'fullscreen-overlay';
+            
+            // Создаём контейнер для изображения
+            const container = document.createElement('div');
+            container.className = 'fullscreen-container';
+            
+            // Создаём увеличенное изображение
+            const fullImg = document.createElement('img');
+            fullImg.src = img.src;
+            fullImg.className = 'fullscreen-img';
+            
+            // Создаём кнопку закрытия
+            const closeBtn = document.createElement('button');
+            closeBtn.innerHTML = '✕';
+            closeBtn.className = 'fullscreen-close';
+            
+            // Собираем всё вместе
+            container.appendChild(fullImg);
+            container.appendChild(closeBtn);
+            overlay.appendChild(container);
+            document.body.appendChild(overlay);
+            
+            // Закрытие при клике на фон или кнопку
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay || e.target === closeBtn) {
+                    overlay.remove();
+                }
+            });
+            
+            // Закрытие по клавише ESC
+            document.addEventListener('keydown', function escHandler(e) {
+                if (e.key === 'Escape') {
+                    overlay.remove();
+                    document.removeEventListener('keydown', escHandler);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "witcher-3",
+        "title": "Ведьмак 3: Дикая Охота",
+        "year": 2015,
+        "description": "Эпическое фэнтези-RPG с открытым миром. Вы — Геральт из Ривии, охотник на чудовищ. Вам предстоит найти свою пропавшую дочь и спасти мир от угрозы.",
+        "steam_link": "https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/"
+    },
+    {
+        "id": "cyberpunk-2077",
+        "title": "Cyberpunk 2077",
+        "year": 2020,
+        "description": "Открытый мир в стиле киберпанк. Станьте наёмником V и боритесь за жизнь в городе будущего — Найт-Сити.",
+        "steam_link": "https://store.steampowered.com/app/1091500/Cyberpunk_2077/"
+    },
+    {
+        "id": "hades",
+        "title": "Hades",
+        "year": 2020,
+        "description": "Roguelite экшен от создателей Bastion. Прорывайтесь из подземного мира в роли Загрея, сына Аида. Каждая смерть — это новый виток сюжета.",
+        "steam_link": "https://store.steampowered.com/app/1145360/Hades/"
+    },
+    {
+        "id": "terraria",
+        "title": "Terraria",
+        "year": 2011,
+        "description": "Приключенческая песочница с элементами крафта и выживания. Копайте, стройте, сражайтесь с боссами и исследуйте procedurally-сгенерированный мир.",
+        "steam_link": "https://store.steampowered.com/app/105600/Terraria/"
+    },
+    {
+        "id": "portal-2",
+        "title": "Portal 2",
+        "year": 2011,
+        "description": "Легендарная головоломка от первого лица с кооперативом. Используйте портальную пушку, чтобы решать задачи и шутить с GLaDOS.",
+        "steam_link": "https://store.steampowered.com/app/620/Portal_2/"
+    },
+    {
+        "id": "cs2d",
+        "title": "CS2D",
+        "year": 2011,
+        "description": "Кс в 2д",
+        "steam_link": "https://store.steampowered.com/app/666220/CS2D/"
+    }
+
+]

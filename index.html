@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeSteamly - Каталог бесплатных игр в Steam</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logog">
+                <h1>FreeSteamly</h1>
+                <p>
+                    Каталог бесплатных игр
+                    <a href="https://store.steampowered.com/">Steam</a>
+                </p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="search-section">
+                <input type="text" id="searchInput" placeholder="Поиск игры">
+            </div>
+
+            <div class="filters-section">
+                <h3>Фильтр по жанрам</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-genre="all">Все игры</button>
+                    <button class="filter-btn" data-genre="moba">MOBA</button>
+                    <button class="filter-btn" data-genre="shooter">Шутер</button>
+                    <button class="filter-btn" data-genre="action">Экшен</button>
+                    <button class="filter-btn" data-genre="adult">18+</button>
+                </div>
+            </div>
+
+            <div class="games-grid">
+                <div class="game-card" data-genre="moba">
+                    <img src="images/Dota_2.jpg" alt="Dota 2" loading="lazy">
+                    <h3>Dota 2</h3>
+                    <div class="year">2012</div>
+                    <div class="genre">MOBA</div>
+                    <p>Многопользовательская командная компьютерная игра в жанре MOBA, разработанная и изданная корпорацией Valve.</p>
+                    <a href="pages/1-dota.html" class="btn">Подробнее</a>
+                </div>
+
+                <div class="game-card" data-genre="shooter">
+                    <img src="images/cs2.jpg" alt="Counter Strike 2" loading="lazy">
+                    <h3>Counter Strike 2</h3>
+                    <div class="year">2023</div>
+                    <div class="genre">Шутер</div>
+                    <p>Компьютерная игра в жанре многопользовательского тактического шутера от первого лица, разработанная компанией Valve.</p>
+                    <a href="pages/2-cs2.html" class="btn">Подробнее</a>
+                </div>
+
+                <div class="game-card" data-genre="top-down">
+                    <img src="images/cs2d.jpg" alt="Counter Strike 2D" loading="lazy">
+                    <h3>CS2D</h3>
+                    <div class="year">2004</div>
+                    <div class="genre">Top-Down шутер</div>
+                    <p>Компьютерная игра в жанре командного Top-Down шутера, бесплатный собственнический двухмерный клон популярной игры Counter-Strike компании Valve Software.</p>
+                    <a href="pages/3-cs2d.html" class="btn">Подробнее</a>
+                </div>
+
+                <div class="game-card" data-genre="action">
+                    <img src="images/TF2.jpg" alt="Team Fortress 2" loading="lazy">
+                    <h3>Team Fortress 2</h3>
+                    <div class="year">2007</div>
+                    <div class="genre">Экшен</div>
+                    <p>Девять классов с уникальными характерами откроют вам доступ ко множеству разнообразных тактик и навыков.</p>
+                    <a href="pages/4-tf2.html" class="btn">Подробнее</a>
+                </div>
+
+                <div class="game-card" data-genre="action">
+                    <img src="images/WT.png" alt="War Thunder" loading="lazy">
+                    <h3>War Thunder</h3>
+                    <div class="year">2012</div>
+                    <div class="genre">Экшен</div>
+                    <p>масштабная бесплатная онлайн-игра про реалистичную боевую технику, охватывающая период от Второй мировой войны до современности.</p>
+                    <a href="pages/5-WT.html" class="btn">Подробнее</a>
+                </div>
+
+                <div class="game-card" data-genre="adult">
+                    <img src="images/LG.jpg" alt="Lust Goddess" loading="lazy">
+                    <h3>Lust Goddess</h3>
+                    <div class="year">2024</div>
+                    <div class="genre">18+</div>
+                    <p>условно-бесплатная (free-to-play) коллекционная карточная игра (ККИ) с элементами RPG для взрослых (18+).</p>
+                    <a href="pages/6-LG.html" class="btn">Подробнее</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; Данный сайт никак не связан с Valve Corporation. Все игры распространяются на условиях их разработчиков.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
