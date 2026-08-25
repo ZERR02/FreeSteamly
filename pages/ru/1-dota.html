@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru" data-language="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota 2</title>
+    <link rel="stylesheet" href="../../styles/style_universal.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../icons/favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="link-exit">
+            <a href="../../index.html" class="exit-btn">Назад</a>
+        </div>
+        <div class="logog">
+            <h1>FreeSteamly</h1>
+            <p>
+                Каталог бесплатных игр
+                <a href="https://store.steampowered.com/">Steam</a>
+            </p>
+        </div>
+    </header>
+    <div class="line"></div>
+    <main class="main-content">
+        <div class="game-info">
+            
+            <div class="game-info-row">
+                <img src="../../images/Dota_2.jpg" alt="Dota 2" loading="lazy" class="img-main">
+                <div class="game-text">
+                    <h2 class="main-details">
+                        Дата выхода: 2013<br>
+                        Жанр: MOBA (Strategy / Action)<br>
+                        Разработчик: Valve<br>
+                        Издательство: Valve<br>
+                        Платформа: PC<br>
+                        Тип издания: Лицензия (Free-to-Play)<br>
+                        Язык интерфейса: Русский<br>
+                        Язык озвучки: Русский
+                    </h2>
+                    <h2 class="treb-details">
+                        Системные требования:<br>
+                        Операционная система: Windows 10 / 11 64-bit<br>
+                        Процессор: Двухъядерный Intel или AMD от 2.8 ГГц<br>
+                        Оперативная память: 4 Гб<br>
+                        Видеокарта: NVIDIA GeForce 8600 / 9600GT или AMD Radeon HD 2600 / 3600 с поддержкой DirectX 11<br>
+                        Звуковая карта: Звуковое устройство DirectX 11<br>
+                        Свободное место на жестком диске: 60 Гб
+                    </h2>
+                </div>
+            </div>
+           
+            <div class="game-desk"> <h2>Описание игры</h2>
+                <p>Dota 2 — это командная многопользовательская онлайн-игра в жанре MOBA, где две команды по пять игроков сражаются на симметричной карте. Цель каждой стороны — уничтожить главное здание противника, называемое «Древним». Игроки управляют уникальными героями с разными способностями, зарабатывают опыт и золото, убивая вражеских крипов (нейтральных юнитов) и героев, покупают усиливающие предметы и тактически взаимодействуют друг с другом. Dota 2 известна своей высокой сложностью, огромным количеством героев, глубиной стратегии и отсутствием внутриигровых покупок, влияющих на геймплей (все элементы равны для всех).</p>
+            </div>
+            <h2 class="trailer">Трейлер игры:</h2>
+            <div class="video-trailer">
+                <iframe width="700" height="400" src="https://www.youtube.com/embed/-cSFPIwMEq4?si=tK6F131JzBWi1IVZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="screenshots">
+                <h3 class="screenshots-title">Скриншоты игры:</h3>
+                <div class="screenshots-grid">
+                    <img src="../../images/dota-screenshots/1.jpg" alt="Скриншот игры" loading="lazy" class="img-screen" onclick="openFullscreen(this)">
+                    <img src="../../images/dota-screenshots/2.jpg" alt="Скриншот игры" loading="lazy" class="img-screen" onclick="openFullscreen(this)">
+                    <img src="../../images/dota-screenshots/3.jpg" alt="Скриншот игры" loading="lazy" class="img-screen" onclick="openFullscreen(this)">
+                    <img src="../../images/dota-screenshots/4.jpg" alt="Скриншот игры" loading="lazy" class="img-screen" onclick="openFullscreen(this)">
+                    <img src="../../images/dota-screenshots/5.jpg" alt="Скриншот игры" loading="lazy" class="img-screen" onclick="openFullscreen(this)">
+                    <img src="../../images/dota-screenshots/6.jpg" alt="Скриншот игры" loading="lazy" class="img-screen" onclick="openFullscreen(this)">
+                    <img src="../../images/dota-screenshots/7.jpg" alt="Скриншот игры" loading="lazy" class="img-screen" onclick="openFullscreen(this)">
+                    <img src="../../images/dota-screenshots/8.jpg" alt="Скриншот игры" loading="lazy" class="img-screen" onclick="openFullscreen(this)">
+                </div>
+            </div>
+            <h3 class="official">Официальная ссылка на игру в steam:</h3>
+            <div class="link-game">
+                <a href="https://store.steampowered.com/app/570/Dota_2/" class="btn">Скачать игру</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Данный сайт никак не связан с Valve Corporation. Все игры распространяются на условиях их разработчиков.</p>
+    </footer>
+
+    <script src="../../language.js"></script>
+    <script>
+        function openFullscreen(img) {
+            // Создаём затемнённый фон
+            const overlay = document.createElement('div');
+            overlay.className = 'fullscreen-overlay';
+            
+            // Создаём контейнер для изображения
+            const container = document.createElement('div');
+            container.className = 'fullscreen-container';
+            
+            // Создаём увеличенное изображение
+            const fullImg = document.createElement('img');
+            fullImg.src = img.src;
+            fullImg.className = 'fullscreen-img';
+            
+            // Создаём кнопку закрытия
+            const closeBtn = document.createElement('button');
+            closeBtn.innerHTML = '✕';
+            closeBtn.className = 'fullscreen-close';
+            
+            // Собираем всё вместе
+            container.appendChild(fullImg);
+            container.appendChild(closeBtn);
+            overlay.appendChild(container);
+            document.body.appendChild(overlay);
+            
+            // Закрытие при клике на фон или кнопку
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay || e.target === closeBtn) {
+                    overlay.remove();
+                }
+            });
+            
+            // Закрытие по клавише ESC
+            document.addEventListener('keydown', function escHandler(e) {
+                if (e.key === 'Escape') {
+                    overlay.remove();
+                    document.removeEventListener('keydown', escHandler);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

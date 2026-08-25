@@ -141,8 +141,18 @@ function applyLanguage(language) {
         switcher.type = 'button';
         document.querySelector('header').appendChild(switcher);
         switcher.addEventListener('click', () => {
-            const currentLanguage = localStorage.getItem('siteLanguage') || 'ru';
-            applyLanguage(currentLanguage === 'ru' ? 'en' : 'ru');
+            const currentLanguage = document.documentElement.dataset.language || 'ru';
+            const fileName = window.location.pathname.split('/').pop();
+            const targetLanguage = currentLanguage === 'ru' ? 'en' : 'ru';
+            const targetFile = fileName === 'index.html'
+                ? 'index-en.html'
+                : fileName === 'index-en.html'
+                    ? 'index.html'
+                    : fileName;
+            const targetFolder = fileName.startsWith('index')
+                ? ''
+                : `../${targetLanguage}/`;
+            window.location.href = `${targetFolder}${targetFile}`;
         });
     }
     switcher.textContent = language === 'ru' ? 'EN' : 'RU';
@@ -160,6 +170,7 @@ function applyLanguage(language) {
     setText('.filter-btn[data-genre="adult"]', text.adult);
     setText('.trailer', text.trailer);
     setText('.screenshots-title', text.screenshots);
+    setText('.game-desk h2', language === 'ru' ? 'Описание игры' : 'Game description');
     setText('.official', text.official);
     setText('.link-game .btn', text.download);
     setText('.contact-info h3', text.contacts);
@@ -199,4 +210,6 @@ function applyLanguage(language) {
     }
 }
 
-applyLanguage(localStorage.getItem('siteLanguage') || 'ru');
+const pageLanguage = document.documentElement.dataset.language
+    || (document.documentElement.lang === 'en' ? 'en' : 'ru');
+applyLanguage(pageLanguage);
