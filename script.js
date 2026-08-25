@@ -93,6 +93,7 @@ function getGenreName(genre) {
         'shooter': 'Шутер',
         'top-down': 'Top-Down',
         'action': 'Экшен',
+        'simulator': 'Симулятор',
         'adult': '18+'
     };
     return genres[genre] || genre;
